@@ -2,43 +2,54 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iCode - Leading Web & App Development Company</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <title>CodifyNow - Leading Web & App Development Company</title>
+    
+    <!-- Link to the external CSS files -->
+    <link rel="stylesheet" href="css/main.css"> <!-- Global styles -->
+    <link rel="stylesheet" href="css/header.css"> <!-- Header styles -->
+    <link rel="stylesheet" href="css/form.css"> <!-- Form styles -->
+    <link rel="stylesheet" href="css/footer.css"> <!-- footer styles -->
+    <link rel="stylesheet" href="css/services.css"> <!-- services styles -->
+    <link rel="stylesheet" href="css/about.css"> <!-- About section styles -->
+    <link rel="stylesheet" href="css/contact.css"> <!-- contact section styles -->
+
+    <link rel="stylesheet" href="css/testimonial.css"> <!-- Testimonial styles -->
 </head>
 <body>
-    <header class="main-header">
-        <div class="logo">
-            <h1>iCode</h1>
-        </div>
-        <nav>
-            <div class="hamburger-menu" onclick="toggleMenu()">
-                <i class="fas fa-bars"></i>
+    <!-- Header Section -->
+    <header>
+        <div class="main-header">
+            <div class="logo">
+                <h1>CodifyNow</h1>
             </div>
-            <ul class="nav-links">
-                <li><a href="#about" class="nav-link">About Us</a></li>
-                <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
-                <li><a href="#contact" class="nav-link">Get a Quote</a></li>
-                <li><a href="https://api.whatsapp.com/send?phone=+918553487848" target="_blank" class="nav-link button-highlight">Chat with Us</a></li>
-                <li><a href="tel:+918553487848" class="nav-link button-highlight">Call: +91 8553487848</a></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li><a href="#contact" class="nav-link">Get a Quote</a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=+918553487848" target="_blank" class="nav-link button-highlight">Chat with Us</a></li>
+                    <li><a href="tel:+918553487848" class="nav-link button-highlight">Call: +91 8553487848</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
+    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
             <div class="hero-form-container">
-                <h2>Submit Your Details for a Quote</h2>
-                <p>Expert web and app development services tailored for your business success.</p>
-                <form action="submit_form.php" method="POST" class="hero-form" onsubmit="return validateForm()">
-                    <input type="text" id="name" name="name" placeholder="Your Name" required>
-                    <input type="text" id="phone" name="phone" placeholder="Phone Number" required>
-                    <input type="email" id="email" name="email" placeholder="Your Email" required>
-                    <input type="text" id="location" name="location" placeholder="Location" required>
+                <h2 id="form-title">Submit Your Details for a Quote</h2>
+                <p id="form-description">Expert web and app development services tailored for your business success.</p>
+             
+                 <!--i will add the action link later, just make sure that -->
+               <!-- after the submit button is pressed the thank you message should be shown-->
+                 <form id="quote-form" action="" method="POST" class="hero-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="text" name="phone" placeholder="Phone Number" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="text" name="location" placeholder="Location" required>
                     <button type="submit">Submit</button>
                 </form>
             </div>
@@ -48,8 +59,8 @@
     <!-- About Us Section -->
     <section id="about" class="about">
         <div class="about-content">
-            <h2 class="section-title">About iCode</h2>
-            <p><strong>iCode</strong> is a Bangalore-based company founded in 2020. We specialize in <strong>web development</strong>, <strong>app development</strong>, and <strong>digital marketing</strong>. Our goal is to deliver high-quality, scalable solutions for businesses looking to establish or improve their online presence.</p>
+            <h2 class="section-title">About CodifyNow</h2>
+            <p><strong>CodifyNow</strong> is a Bangalore-based company founded in 2020. We specialize in <strong>web development</strong>, <strong>app development</strong>, and <strong>digital marketing</strong>. Our goal is to deliver high-quality, scalable solutions for businesses looking to establish or improve their online presence.</p>
         </div>
     </section>
 
@@ -75,44 +86,50 @@
         </div>
     </section>
 
-    <!-- Web Development Focused Testimonials -->
+    <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials">
-        <h2 class="section-title">What Our Web Development Clients Say</h2>
-        <div class="testimonial-carousel">
+        <h2 class="section-title">What Our Clients Say</h2>
+        <div class="testimonial-carousel" id="testimonial-carousel">
             <div class="testimonial-card">
                 <div class="testimonial-avatar male-avatar"></div>
-                <p>"iCode redesigned our corporate website, boosting both traffic and conversions. Their attention to detail was impeccable!"</p>
+                <p>"CodifyNow redesigned our corporate website, boosting both traffic and conversions. Their attention to detail was impeccable!"</p>
                 <p class="client-name">Rajesh, CEO of Webify Solutions</p>
             </div>
             <div class="testimonial-card">
                 <div class="testimonial-avatar female-avatar"></div>
-                <p>"Working with iCode was seamless. They delivered a responsive, visually stunning e-commerce website that exceeded our expectations."</p>
+                <p>"Working with CodifyNow was seamless. They delivered a responsive, visually stunning e-commerce website that exceeded our expectations."</p>
                 <p class="client-name">Priya, Founder of E-Shop</p>
+            </div>
+        </div>
+       </section>
+
+          <!-- Hero Section -->
+    <section class="hero">
+        <div class="contact-form">
+            <div class="contact-form-container">
+                <h2 id="form-title">Contact</h2>
+              
+                   <!--i will add the action link later, just make sure that -->
+               <!-- after the submit button is pressed the thank you message should be shown-->
+                <form id="quote-form" action="" method="POST" class="hero-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="text" name="phone" placeholder="Phone Number" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="text" name="location" placeholder="Location" required>
+                    <button type="submit">Submit</button>
+                </form>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-form-section">
-        <h2>Contact Us</h2>
-        <form action="submit_form.php" method="POST" class="contact-form" onsubmit="return validateForm()">
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
-            <input type="text" id="phone" name="phone" placeholder="Phone Number" required>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
-            <input type="text" id="location" name="location" placeholder="Location" required>
-            <button type="submit">Get a Quote</button>
-        </form>
-    </section>
-
-    <footer class="footer">
-        <p>&copy; 2024 iCode. All rights reserved.</p>
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer">
+            <p>&copy; 2024 CodifyNow. All rights reserved.</p>
+        </div>
     </footer>
 
-    <!-- Floating WhatsApp Chat Icon -->
-    <a href="https://api.whatsapp.com/send?phone=+918553487848" target="_blank" class="floating-chat">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <script src="script.js"></script>
+    <!-- Include JavaScript -->
+    <script src="js/scripts.js"></script>
 </body>
 </html>

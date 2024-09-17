@@ -1,0 +1,111 @@
+/* Ensure body content is always centered */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure it takes up the full viewport height */
+    margin: 0;
+}
+
+/* Center content inside hero section */
+.hero {
+    display: flex;
+    justify-content: center;     /* Horizontally center the content */
+    align-items: center;         /* Vertically center the content */
+    text-align: center;          /* Center text inside */
+    height: 100vh;                /* Take up full viewport height */
+    width: 100vw;                 /* Take up full viewport width */              /* Make hero section full viewport height */
+}
+
+/* Center the form container */
+.hero-form-container {
+    margin: 0 auto;
+    max-width: 400px;            /* Keep it responsive */
+    width: 100%;                 /* Ensure it takes full width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;         /* Center items in the form */
+}
+
+/* Center content inside About section */
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;              /* Center the content */
+    text-align: center;
+      width: 100vw;                 /* Take up full viewport width */
+}
+
+/* Center the Services section */
+.services-list {
+    display: flex;
+    justify-content: center;     /* Center services horizontally */
+    flex-wrap: wrap;
+    gap: 20px;                   /* Add spacing between services */
+    width: 100%;
+
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;         /* Ensure each service item is centered */
+    text-align: center;
+    max-width: 300px;
+    margin: 15px;
+}
+
+/* Center testimonials section */
+.testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 0;
+    width: 100vw;                 /* Take up full viewport width */
+}
+
+/* Ensure footer content is centered */
+.footer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;                 /* Take up full viewport width */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+
+    /* Stack the header items and center */
+    .main-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Ensure nav links are centered */
+    .nav-links {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Stack and center services on mobile */
+    .services-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Adjust hero form container for mobile */
+    .hero-form-container {
+        max-width: 90%; /* Take up more space on smaller screens */
+    }
+
+    /* Stack testimonials for mobile */
+    .testimonial-carousel {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;  /* Space between testimonials */
+    }
+}

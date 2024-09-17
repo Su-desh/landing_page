@@ -1,0 +1,51 @@
+/* Testimonials Section */
+.testimonials {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.testimonial-carousel {
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.testimonial-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 15px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.male-avatar {
+    background-image: url('https://randomuser.me/api/portraits/men/1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.female-avatar {
+    background-image: url('https://randomuser.me/api/portraits/women/1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.client-name {
+    font-weight: bold;
+    margin-top: 10px;
+}

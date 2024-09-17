@@ -1,0 +1,41 @@
+
+/* Footer */
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .hero-form-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .services-list {
+        flex-direction: column;
+    }
+
+    .testimonial-card {
+        width: 90%;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+}
